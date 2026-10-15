@@ -16,17 +16,17 @@ Research date: 15 October 2026. This is an independent pitch concept, not an off
 
 These destinations appear as outgoing links on the official ANSA homepage unless otherwise stated.
 
-| Channel | Verified destination |
-| --- | --- |
-| YouTube | https://www.youtube.com/channel/UCwC7jD9Tv1_FuSo1vVNvqzw |
-| Instagram | https://www.instagram.com/anglernewssa/ |
-| Facebook | https://web.facebook.com/anglingtimes.southafrica |
-| WhatsApp channel | https://whatsapp.com/channel/0029Va9JKhV6LwHtD4ijLF1o |
-| TikTok | https://www.tiktok.com/@anglernewssouthafrica — exact handle independently named and linked by ECR; ANSA homepage currently uses a TikTok search destination |
-| Spotify | https://open.spotify.com/show/0gayyCe71oicMYF4bwsBw4 |
-| Apple Podcasts | https://podcasts.apple.com/us/podcast/angler-news-south-africa-podcast/id1743346138 |
-| Magazines | https://fliphtml5.com/bookcase/kuhzd/ |
-| Official embedded podcast | https://iframe.iono.fm/c/8652 |
+| Channel                   | Verified destination                                                                                                                                         |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| YouTube                   | https://www.youtube.com/channel/UCwC7jD9Tv1_FuSo1vVNvqzw                                                                                                     |
+| Instagram                 | https://www.instagram.com/anglernewssa/                                                                                                                      |
+| Facebook                  | https://web.facebook.com/anglingtimes.southafrica                                                                                                            |
+| WhatsApp channel          | https://whatsapp.com/channel/0029Va9JKhV6LwHtD4ijLF1o                                                                                                        |
+| TikTok                    | https://www.tiktok.com/@anglernewssouthafrica — exact handle independently named and linked by ECR; ANSA homepage currently uses a TikTok search destination |
+| Spotify                   | https://open.spotify.com/show/0gayyCe71oicMYF4bwsBw4                                                                                                         |
+| Apple Podcasts            | https://podcasts.apple.com/us/podcast/angler-news-south-africa-podcast/id1743346138                                                                          |
+| Magazines                 | https://fliphtml5.com/bookcase/kuhzd/                                                                                                                        |
+| Official embedded podcast | https://iframe.iono.fm/c/8652                                                                                                                                |
 
 The official homepage lists the public business contact **083 7928 977** and **vinesh@anglingtimes.co.za**. No contact was made during this research.
 
@@ -51,19 +51,19 @@ Recommended pitch priorities: dated editorial cards, local region/facet filterin
 
 Downloaded source assets are stored in `work/research-assets/`. Images were visually inspected where noted below. Catch photography is editorial archive content: it must not be represented as new community submissions or current fishing activity.
 
-| Local asset | Original URL | Provenance / inspection |
-| --- | --- | --- |
-| `white-logo.png` | https://anglernews.co.za/wp-content/uploads/2020/04/ANSA-logo-White-01.png | Official homepage logo; visually inspected; 2755×1316 |
-| `red-a.png` | https://anglernews.co.za/wp-content/uploads/2020/04/Red-A.png | Official website brand mark |
-| `original-hero.jpg` | https://anglernews.co.za/wp-content/uploads/2024/03/pexels-azwar-ipank-1133086-scaled.jpg | Current homepage background, referenced in its stylesheet; visually inspected; 2560×1700; filename attributes Pexels/Azwar Ipank; do not imply this stock location is KZN |
-| `original-stock.jpg` | https://anglernews.co.za/wp-content/uploads/2024/03/pexels-pixabay-262247.jpg | Secondary existing website background; downloaded |
-| `vinesh-kob.jpg` | https://turntable.kagiso.io/images/Vinesh_KOB_Autumn.original.jpg | ECR announcement image, credited Vinesh Soogreem; visually inspected; 2048×1536 |
-| `vinesh-snoek.jpg` | https://turntable.kagiso.io/images/Vinesh_Soogreem__Snoek.original.jpg | Spearfishing 101 source captions Vinesh with Natal snoek at Blue Lagoon, credit ANSA; visually inspected; 1280×591 |
-| `vinesh-bream.png` | https://turntable.kagiso.io/images/2_Vinesh_Soogreem.original.png | ECR Big Walk article captions Vinesh with bronze bream caught off Margate Pier; credit ANSA / Supplied; downloaded |
-| `kingfish.jpg` | https://turntable.kagiso.io/images/Tanya_Nadauld_world_record_golden_kingfish.original.jpg | Spearfishing 101 captions Tanya Nadauld with golden kingfish; credit ANSA / Tanya Nadauld; visually inspected; 1080×1350 |
-| `garrick.jpg` | https://turntable.kagiso.io/images/Riley_Solomon_junior_SA_record_garrick_15.44kg.original.jpg | Spearfishing 101 captions Riley Solomon with garrick; credit ANSA / Riley Solomon; visually inspected; 720×1600 |
-| `johan-grunter.jpg` | https://turntable.kagiso.io/images/Johan_Boshoff_8kg_Grunter.original.jpg | Spearfishing 101 captions Johan Boshoff with grunter; credit ANSA / Johan Boshoff; visually inspected; 1079×1346 |
-| `ray.jpg` | https://turntable.kagiso.io/images/Ray_3.original.jpg | Spearfishing 101 captions Ray Thompson; credit ANSA / Supplied; downloaded |
+| Local asset          | Original URL                                                                                   | Provenance / inspection                                                                                                                                                   |
+| -------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `white-logo.png`     | https://anglernews.co.za/wp-content/uploads/2020/04/ANSA-logo-White-01.png                     | Official homepage logo; visually inspected; 2755×1316                                                                                                                     |
+| `red-a.png`          | https://anglernews.co.za/wp-content/uploads/2020/04/Red-A.png                                  | Official website brand mark                                                                                                                                               |
+| `original-hero.jpg`  | https://anglernews.co.za/wp-content/uploads/2024/03/pexels-azwar-ipank-1133086-scaled.jpg      | Current homepage background, referenced in its stylesheet; visually inspected; 2560×1700; filename attributes Pexels/Azwar Ipank; do not imply this stock location is KZN |
+| `original-stock.jpg` | https://anglernews.co.za/wp-content/uploads/2024/03/pexels-pixabay-262247.jpg                  | Secondary existing website background; downloaded                                                                                                                         |
+| `vinesh-kob.jpg`     | https://turntable.kagiso.io/images/Vinesh_KOB_Autumn.original.jpg                              | ECR announcement image, credited Vinesh Soogreem; visually inspected; 2048×1536                                                                                           |
+| `vinesh-snoek.jpg`   | https://turntable.kagiso.io/images/Vinesh_Soogreem__Snoek.original.jpg                         | Spearfishing 101 source captions Vinesh with Natal snoek at Blue Lagoon, credit ANSA; visually inspected; 1280×591                                                        |
+| `vinesh-bream.png`   | https://turntable.kagiso.io/images/2_Vinesh_Soogreem.original.png                              | ECR Big Walk article captions Vinesh with bronze bream caught off Margate Pier; credit ANSA / Supplied; downloaded                                                        |
+| `kingfish.jpg`       | https://turntable.kagiso.io/images/Tanya_Nadauld_world_record_golden_kingfish.original.jpg     | Spearfishing 101 captions Tanya Nadauld with golden kingfish; credit ANSA / Tanya Nadauld; visually inspected; 1080×1350                                                  |
+| `garrick.jpg`        | https://turntable.kagiso.io/images/Riley_Solomon_junior_SA_record_garrick_15.44kg.original.jpg | Spearfishing 101 captions Riley Solomon with garrick; credit ANSA / Riley Solomon; visually inspected; 720×1600                                                           |
+| `johan-grunter.jpg`  | https://turntable.kagiso.io/images/Johan_Boshoff_8kg_Grunter.original.jpg                      | Spearfishing 101 captions Johan Boshoff with grunter; credit ANSA / Johan Boshoff; visually inspected; 1079×1346                                                          |
+| `ray.jpg`            | https://turntable.kagiso.io/images/Ray_3.original.jpg                                          | Spearfishing 101 captions Ray Thompson; credit ANSA / Supplied; downloaded                                                                                                |
 
 ### Rights and release limits
 

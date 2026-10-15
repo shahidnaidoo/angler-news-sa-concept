@@ -1,0 +1,8 @@
+schemaVersion: 1
+repository: shahidnaidoo/angler-news-sa-concept
+channel: stable
+adoptedAt: 2026-10-15
+baselineCommit: unborn
+profiles:
+  - web
+exceptions: []

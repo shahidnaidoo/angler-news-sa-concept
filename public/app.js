@@ -1,4 +1,49 @@
+import { icon } from "./icons.js";
+import { initConditions } from "./conditions.js";
 export const stories = [
+  {
+    id: "zambezi",
+    title: "Four hours. One extraordinary shark.",
+    date: "ARCHIVE",
+    type: "NORTH COAST · CATCH & RELEASE",
+    image: "mike-zambezi",
+    alt: "ANSA and ECR archive artwork showing Mike Vlcek with a Zambezi shark on the beach",
+    facets: ["shore"],
+    metric: "179.8 kg · reported by ECR",
+    description:
+      "Mike Vlcek’s North Coast encounter lasted four hours before the Zambezi shark was released. Explore the original ANSA report.",
+    keywords: "monster shark Zambezi Mike Vlcek north coast",
+    url: "https://www.ecr.co.za/shows/east-coast-breakfast/179kg-zambezi-caught-kzn-north-coast/",
+  },
+  {
+    id: "giant-kob",
+    title: "A North Coast kob to remember.",
+    date: "28 MAY 2026",
+    isoDate: "2026-05-28",
+    type: "NORTH COAST · ARCHIVE HIGHLIGHT",
+    image: "andre-kob",
+    alt: "Andre Coetser kneeling on the beach at night holding a large kob",
+    facets: ["shore"],
+    metric: "160 cm · reported length",
+    description:
+      "Andre Coetser’s remarkable North Coast kob leads this ANSA archive highlight. Explore the original report and the story behind the catch.",
+    keywords: "monster kob Andre Coetser north coast",
+    url: "https://www.ecr.co.za/shows/east-coast-breakfast/pre-run-big-fish-action-fires-along-kzn/",
+  },
+  {
+    id: "kayak-kingfish",
+    title: "A kayak. A giant kingfish. Durban.",
+    date: "ARCHIVE",
+    type: "DURBAN · KAYAK FISHING",
+    image: "shaun-kingfish",
+    alt: "Shaun Reid holding a giant kingfish on his fishing kayak off Durban",
+    facets: ["offshore"],
+    metric: "30 kg · reported by ECR",
+    description:
+      "Shaun Reid’s giant kingfish from a kayak off Durban is one for the fishing daydreams. ECR’s archive caption reports it at 30 kg.",
+    keywords: "monster giant kingfish GT Shaun Reid kayak Durban",
+    url: "https://www.ecr.co.za/shows/east-coast-breakfast/kzn-fishing-picks-ahead-black-friday-weekend/",
+  },
   {
     id: "hotspots",
     title: "Fishing Hotspots Heat Up",
@@ -81,6 +126,10 @@ export const regions = {
   },
 };
 if (typeof document !== "undefined") {
+  document
+    .querySelectorAll("[data-icon]")
+    .forEach((el) => (el.innerHTML = icon(el.dataset.icon)));
+  initConditions();
   let facet = "all";
   const search = document.querySelector("#search");
   const list = document.querySelector("#stories");
@@ -89,8 +138,8 @@ if (typeof document !== "undefined") {
     list.replaceChildren(
       ...result.map((s) => {
         const article = document.createElement("article");
-        article.className = "story";
-        article.innerHTML = `<a class="story-image" href="${s.url}" target="_blank" rel="noopener"><img src="/assets/${s.image}.webp" width="650" height="450" loading="lazy" alt="${s.alt}"><span aria-hidden="true">↗</span></a><div class="story-meta"><span>${s.type}</span>${s.date === "ARCHIVE" ? "<span>ARCHIVE</span>" : '<time datetime="2026-10-15">' + s.date + "</time>"}</div><h3><a href="${s.url}" target="_blank" rel="noopener">${s.title}</a></h3><p>${s.description}</p><div class="story-foot"><a href="${s.url}" target="_blank" rel="noopener">Explore story ↗</a><button class="save" data-id="${s.id}" aria-label="Save ${s.title}" aria-pressed="false" title="Save story">♡</button></div>`;
+        article.className = s.metric ? "story catch-story" : "story";
+        article.innerHTML = `<a class="story-image" href="${s.url}" target="_blank" rel="noopener"><img src="/assets/${s.image}.webp" width="650" height="450" loading="lazy" alt="${s.alt}"><span aria-hidden="true">${icon("arrow")}</span></a><div class="story-meta"><span>${s.type}</span>${s.date === "ARCHIVE" ? "<span>ARCHIVE</span>" : '<time datetime="' + (s.isoDate || "2026-10-15") + '">' + s.date + "</time>"}</div>${s.metric ? `<p class="catch-metric">${s.metric}</p>` : ""}<h3><a href="${s.url}" target="_blank" rel="noopener">${s.title}</a></h3><p>${s.description}</p><div class="story-foot"><a href="${s.url}" target="_blank" rel="noopener">Explore story ${icon("arrow")}</a><button class="save" data-id="${s.id}" aria-label="Save ${s.title}" aria-pressed="false" title="Save story">${icon("heart")}</button></div>`;
         return article;
       }),
     );
@@ -123,7 +172,8 @@ if (typeof document !== "undefined") {
   }
   function updateSave(button, saved) {
     button.setAttribute("aria-pressed", String(saved));
-    button.textContent = saved ? "♥" : "♡";
+    button.innerHTML = icon("heart");
+    button.classList.toggle("saved", saved);
     button.title = saved ? "Remove saved story" : "Save story";
     button.setAttribute(
       "aria-label",
@@ -199,7 +249,7 @@ if (typeof document !== "undefined") {
     }
     box.hidden = false;
     event.currentTarget.setAttribute("aria-expanded", "true");
-    event.currentTarget.textContent = "Podcast player loaded ↓";
+    event.currentTarget.textContent = "Podcast player loaded";
     event.currentTarget.disabled = true;
     const frame = box.querySelector("iframe");
     frame.tabIndex = 0;

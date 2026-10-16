@@ -35,4 +35,4 @@ http
       res.end(await readFile(root + "/404.html"));
     }
   })
-  .listen(4173, "0.0.0.0");
+  .listen(Number(process.env.PORT || 4186), "127.0.0.1");

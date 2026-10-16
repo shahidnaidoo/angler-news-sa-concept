@@ -2,4 +2,5 @@
 This is an unaffiliated website design preview, not the official ANSA site.
 Official source: https://anglernews.co.za/
 Public podcast: https://www.ecr.co.za/podcasts/ansa/
-All reports are editorial selections with explicit dates. No live fishing conditions or forecasts are provided.
+This evaluation prototype retrieves three-day modelled sea-level/tide and pressure forecasts from Open-Meteo for Durban, Richards Bay, East London and Cape Town. It shows SAST dates, MSL datum, attribution and limitations. Predictions are not observed harbour tides or navigation guidance.
+Archive catch measurements are reported by the linked original ECR/ANSA articles, not independently certified records. Pressure guidance is educational and promises no catch outcome.

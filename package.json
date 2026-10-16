@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node build.mjs",
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check public/app.js && node --check build.mjs",
+    "check": "node --check public/app.js && node --check public/conditions.js && node --check public/icons.js && node --check build.mjs",
     "preview": "node server.mjs",
     "format": "prettier --write public/*.{html,css,js,json,webmanifest} *.mjs package.json vercel.json tests/*.mjs docs/*.md",
     "format:check": "prettier --check public/*.{html,css,js,webmanifest} *.mjs package.json vercel.json tests/*.mjs docs/*.md"

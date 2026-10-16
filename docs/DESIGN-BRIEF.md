@@ -29,3 +29,7 @@ Use a **catalog/detail** structure: a confident editorial homepage with searchab
 ## Verification and publication
 
 Verify desktop and mobile layout, menu behavior, filter/search changes and reset, detail opening/closing, official audio loading, gallery interactions and external destinations. Check keyboard access and obvious visual contrast. Publish the tested code to the user's GitHub account and Vercel only with actual returned deployment evidence; verify the live page and share the real URL. Keep public concept/rights status and research provenance inspectable in the repository.
+
+## Expansion — 16 October 2026
+
+User requested tide charts, barometric-pressure guidance for KZN/SA coastal fishing, compelling verified big-catch stories, and more of Vinesh’s face before pitching. This revision replaces the stock-led hero with Vinesh’s kob portrait, adds studio/rockcod/lakeside photographs, a four-port three-day real model forecast planner with hourly scrubbing and accessible data, linked catch stories, and three pressure disclosures. Preserve ink/red/warm-white editorial tokens. All decorative controls use SVG. Real data, model datum, dates, attribution, unavailable/retry states and archived reported measurements must remain distinguishable; no fabricated tides, observations, certified records or guaranteed-bite claims. The forecast is an evaluation prototype; commercial provider setup and official business/photo permissions remain release requirements.

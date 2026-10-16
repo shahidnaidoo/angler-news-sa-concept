@@ -107,3 +107,23 @@ test("stale forecasts cannot be presented as freshly fetched current guidance", 
     /expired|unavailable/i,
   );
 });
+test("a temporary provider failure recovers with one bounded automatic retry", async () => {
+  let marineCalls = 0;
+  const result = await fetchConditions(
+    "durban",
+    async (url) => {
+      if (url.includes("marine-api") && ++marineCalls === 1)
+        return { ok: false, status: 503 };
+      return {
+        ok: true,
+        json: async () =>
+          url.includes("marine-api")
+            ? fixture("sea_level_height_msl", Array(72).fill(0.5))
+            : fixture("pressure_msl", Array(72).fill(1012)),
+      };
+    },
+    new Date("2026-10-16T12:00:00+02:00"),
+  );
+  assert.equal(marineCalls, 2);
+  assert.equal(result.forecastDate, "2026-10-16");
+});

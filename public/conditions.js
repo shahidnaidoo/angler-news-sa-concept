@@ -27,9 +27,18 @@ export async function fetchConditions(port, fetcher = fetch, now = new Date()) {
   ];
   const [marine, weather] = await Promise.all(
     urls.map(async (u) => {
-      const response = await fetcher(u, { signal: AbortSignal.timeout(12000) });
-      if (!response.ok) throw new Error("Forecast unavailable");
-      return response.json();
+      for (let attempt = 0; attempt < 2; attempt++) {
+        try {
+          const response = await fetcher(u, {
+            signal: AbortSignal.timeout(6000),
+          });
+          if (!response.ok) throw new Error("Forecast unavailable");
+          return await response.json();
+        } catch (error) {
+          if (attempt === 1) throw error;
+          await new Promise((resolve) => setTimeout(resolve, 350));
+        }
+      }
     }),
   );
   const today = sastDate(now);
